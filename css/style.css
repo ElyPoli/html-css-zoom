@@ -12,6 +12,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Link a */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/******/
+
 /* Start Header */
 header {
     display: flex;
@@ -19,20 +28,31 @@ header {
     padding: 10px 10px 10px 0;
 }
 
-header p, i {
+header a, i {
     color: #ffffff;
     font-size: 1rem;
     padding: 5px 5px;
-    background-color: #4a4a4a;
 }
 
-header p {
+header i {
+    background-color: transparent;
+}
+
+header a {
     font-weight: bold;
     display: inline-block;
     border-radius: 5px;
+    background-color: #4a4a4a;
 }
 
-header p:first-child {
+header a:hover {
+    -webkit-box-shadow: inset 0px 0px 15px 0px #262626;
+    -moz-box-shadow: inset 0px 0px 15px 0px #262626;
+    -o-box-shadow: inset 0px 0px 15px 0px #262626;
+    box-shadow: inset 0px 0px 15px 0px #262626;
+}
+
+header a:first-child {
     margin-right: 5px;
 }
 /* End Header */
