@@ -75,9 +75,12 @@ main {
 .card {
     width: 250px;
     height: 200px;
-    background-color: red;
     margin: 10px 5px;
     position: relative;
+}
+
+.card img {
+    width: 100%;
 }
 
 .card p, i {
@@ -91,10 +94,22 @@ main {
 }
 
 .card p {
-    display: inline-block;
-    background-color: rgba(74, 74, 74, 0.25);
+    display: none;
+    background-color: rgba(74, 74, 74, 0.50);
     position: absolute;
     bottom: 5px;
     left: 0;
 }
+
+.card:hover {
+    border: 5px solid rgba(0, 0, 255, 0.40);
+    border-radius: 5px;
+}
+
+.card:hover p {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
 /* End Main */
