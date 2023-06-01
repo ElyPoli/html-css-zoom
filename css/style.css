@@ -60,9 +60,8 @@ header a:first-child {
 /* Start Main */
 main {
     overflow: auto;
-    background-color: rgb(178, 245, 178);
     flex-grow: 1;
-    padding: 50px 30px;
+    padding: 30px;
 }
 
 .flex {
@@ -110,6 +109,58 @@ main {
     display: inline-block;
     cursor: pointer;
 }
-
-
 /* End Main */
+
+/* Start Footer */
+footer {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+footer ul i {
+    font-size: 25px;
+}
+
+footer .arrow-small {
+    font-size: 10px;
+}
+
+footer ul a {
+    display: inline-block;
+    padding: 5px 5px 10px 5px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+footer p {
+    padding-top: 5px;
+}
+
+.label-green {
+    color: #4bc800;
+}
+
+footer div:last-child {
+    background-color: #4a4a4a;
+    cursor: pointer;
+    align-self: center;
+    margin-right: 20px;
+}
+
+footer div:last-child a {
+    color: #e51b16;
+    display: inline-block;
+    padding: 20px;
+}
+/* End Footer */
